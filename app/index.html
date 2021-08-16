@@ -1,0 +1,281 @@
+---
+title: Assignment
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
+<script src="./assets/js/assignment.js"></script>
+
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid top-navbar">
+    <a
+      class="navbar-brand"
+      href="#"
+    >Assignment</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="collapse navbar-collapse assignment-nav"
+      id="navbarNavDropdown"
+    >
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle all-course"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span>All Courses</span>
+            <span class="material-icons expand-more">
+              expand_more
+            </span>
+
+          </a>
+          <ul
+            class="dropdown-menu"
+            aria-labelledby="navbarDropdownMenuLink"
+          >
+            <li><a
+                class="dropdown-item"
+                href="#"
+              >(´・ω・｀)</a></li>
+            <li><a
+                class="dropdown-item"
+                href="#"
+              >( ；∀；)</a></li>
+            <li><a
+                class="dropdown-item"
+                href="#"
+              >( *｀ω´)</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="navbar-nav icons">
+        <li>
+          <span class="material-icons">
+            search
+          </span>
+        </li>
+        <li>
+          <span class="material-icons">
+            notifications_active
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="list_group list col-lg-4 mt-4">
+      <div class="list-dropdown mb-1">
+        <span>All (4)</span>
+        <span class="material-icons expand-more">
+          expand_more
+        </span>
+      </div>
+      <div class="list-group">
+        <a
+          href="#"
+          class="list-group-item list-group-item-action"
+          aria-current="true"
+        >
+          <div class="d-flex w-100 justify-content-between mb-1">
+            <small class="list-chapter">Chapter Assignment 2</small>
+            <small class="list-time">4 hrs ago</small>
+          </div>
+          <div class="d-flex w-100 justify-content-between align-items-center">
+            <h5 class="list-title">Please check this file…</h5>
+            <small class="list-name">Emily Wang</small>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="list-group-item list-group-item-action"
+          aria-current="true"
+        >
+          <div class="d-flex w-100 justify-content-between mb-1">
+            <small class="list-chapter">Chapter Assignment 1</small>
+            <small class="list-time">12 hrs ago</small>
+          </div>
+          <div class="d-flex w-100 justify-content-between align-items-center">
+            <h5 class="list-title">My Homework</h5>
+            <small class="list-name">David Xu</small>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="list-group-item list-group-item-action"
+          aria-current="true"
+        >
+          <div class="d-flex w-100 justify-content-between mb-1">
+            <small class="list-chapter">Final Assignment</small>
+            <small class="list-time">18 hrs ago</small>
+          </div>
+          <div class="d-flex w-100 justify-content-between align-items-center">
+            <h5 class="list-title">Have a problem with this...</h5>
+            <small class="list-name">Tony Wei</small>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="list-group-item list-group-item-action"
+          aria-current="true"
+        >
+          <div class="d-flex w-100 justify-content-between mb-1">
+            <small class="list-chapter">Final Assignment</small>
+            <small class="list-time">19 hrs ago</small>
+          </div>
+          <div class="d-flex w-100 justify-content-between align-items-center">
+            <h5 class="list-title">Did I do it right?</h5>
+            <small class="list-name">Christina Lin</small>
+          </div>
+        </a>
+      </div>
+
+    </div>
+    <!--card col-8 -->
+    <div class="col-lg-8 mt-4">
+      <small class="comment_num mb-1">2 comments</small>
+      <div class="card_group card">
+        <h5 class="card-header">
+          <div class="flex">
+            <div>
+              <small class="card-chapter">Chapter Assignment 2 / HTML&CSS</small>
+              Please check this file for me, thanks!
+            </div>
+            <div>
+              <span class="material-icons">
+                more_vert
+              </span>
+            </div>
+          </div>
+        </h5>
+        <div class="card-body">
+          <div class="user-info-content">
+            <div class="user-info-pic">
+              <img
+                src="./assets/images/1608546323281@2x.jpg"
+                alt=""
+              >
+            </div>
+            <div class="user-info">
+              <h3 class="user-name">Emily Wang</h3>
+              <p class="post-time">10:38 AM (4 hours ago)</p>
+            </div>
+          </div>
+          <p class="article-content">
+            Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following
+            code the height of the <a href="#">div</a> is bigger than the height of the img ? There is a gap below the
+            image, but it
+            doesn’t seems to be a padding/margin. What is the gap or extra space below image?
+          </p>
+          <a
+            href="#"
+            class="btn btn-light border download-file"
+            download="HW-2-David.zip"
+          >
+            <span class="material-icons">
+              attach_file
+            </span>
+            HW-2-David.zip</a>
+          <hr class="hr">
+          <div
+            class="user-reply"
+            id="user_reply"
+          >
+            <div class="flex">
+              <div class="user-info-content">
+                <div class="user-info-pic">
+                  <img
+                    src="./assets/images/83684168_p12_master1200.jpg"
+                    alt=""
+                  >
+                </div>
+                <div class="user-info">
+                  <h3 class="user-name">Andy Chen(You)</h3>
+                  <p class="post-time">13:24 AM (1 hours ago)</p>
+                </div>
+              </div>
+              <div class="user-edit">
+                <span class="material-icons">
+                  star_outline
+                </span>
+                <span class="material-icons">
+                  edit
+                </span>
+              </div>
+            </div>
+            <p class="article-content">
+              Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c
+              and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.
+              <span class="br">
+                You
+                can: </span>　• adjust the <span class="under-line">vertical-align</span> of the image to position it
+              elsewhere (e.g. the
+              <span class="under-line">middle</span> ) or
+              <br>　•
+              change
+              the
+              <span class="under-line">display</span> so it isn’t inline.
+            </p>
+          </div>
+          <div id="ckeditor">
+            <textarea name="editor1"></textarea>
+            <div class="edit-btns">
+              <button
+                type="button"
+                class="btn btn-outline-success edit-cancel"
+                id="return_btn"
+              >Cancel</button>
+              <button
+                type="button"
+                class="btn btn-success edit-reply"
+                id="edit_btn"
+              >Reply</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="footer-content"
+        id="buttons"
+      >
+        <div class="page-content">
+          <span class="material-icons">
+            navigate_before
+          </span>
+          <span class="material-icons">
+            navigate_next
+          </span>
+        </div>
+        <div class="buttons">
+          <button
+            type="button"
+            class="btn btn-outline-success mark-read"
+          >Mark as read</button>
+          <button
+            type="button"
+            class="btn btn-success reply"
+            id="reply_btn"
+          >Reply</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

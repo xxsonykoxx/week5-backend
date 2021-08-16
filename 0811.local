@@ -1,0 +1,57 @@
+## 20210810
+
+Hello  ifang / iva Hsu :
+
+我是六角學院的助教 SONYKO 
+
+作業修改得很好呢！
+網頁操作起來非常流暢、完成度也很高 。
+
+這邊給同學作品可以再修改的小建議：
+
+- 前台產品加入收藏後，若點入產品內容、愛心依舊會是反白的狀態（ 但點擊下去會是移除收藏 ）
+- 購物車頁面 > 使用優惠碼送出之後，折扣金額不會立即刷新顯示。這邊缺少 get 行為，麻煩同學修改一下。
+- 前台的首頁的「購鎂麥」 button 點擊後可以導向產品頁面。
+- navbar 鎂麥產品的下拉選單三個選項點擊後無反應，這邊可以試著完成功能。
+- vue.config.js 的 `publicPath` 會建議調整成[官方文件](https://cli.vuejs.org/zh/config/#publicpath)的建議較好，可以避免錯誤。
+- .eslintrc.js 關閉了許多規則，麻煩同學打開來並嘗試解決問題唷。
+```jsx
+'no-unused-vars': 'warn',
+'func-names': 'off',
+'no-process-exit': 'off',
+'object-shorthand': 'off',
+'class-methods-use-this': 'off',
+'object-curly-newline': 'off',
+```
+- 如果要使用 `async` 與 `await` 的話，請一率補上 `try...catch` 。
+- 沒有用途的 `a` 連結建議補上 `@click.prevnet` ，以避免事件觸發導致 Url 跳掉。
+- UserOrder.vue 的 65 行建議將 products 寫預設值上去。
+- `<error-message name="姓名" class="invalid-feedback"></error-message>` 也可以試著改成元件大小寫模式 `<error-message name="姓名" class="invalid-feedback"></error-message>` → `<ErrorMessage name="姓名" class="invalid-feedback"></ErrorMessage>`，而且也可以改成自閉合。 
+另外 `<Pagination :pageInfo="pageInfo" @changePage="changePage"></Pagination>` 這邊也可以採用自閉合的寫法來撰寫。
+- UserCart.vue 的 28 行的 `alt` 屬性建議多描述一下，該屬性用途是用在於，當使用者網路較慢時可以先告知使用者這區塊是什麼，所以是一個很重要的使用者體驗設置。
+- 頂級元素之間建議補上換行(`template`、`script` 與 `style`)。
+- ProductsViewCard.vue 有註解不要的程式碼。
+- SCSS 中的註解也要整理，除 Bootstrap 之外可以不用。
+
+
+## 補充
+
+- vue.config.js 的 `publicPath` 會建議調整成[官方文件](https://cli.vuejs.org/zh/config/#publicpath)的建議較好，可以避免錯誤。
+- .eslintrc.js 關閉了許多規則，請他刪除試著解決。
+```jsx
+'no-unused-vars': 'warn',
+'func-names': 'off',
+'no-process-exit': 'off',
+'object-shorthand': 'off',
+'class-methods-use-this': 'off',
+'object-curly-newline': 'off',
+```
+
+- 如果要使用 `async` 與 `await` 的話，請一率補上 `try...catch` 。
+- 沒有用途的 `a` 連結建議補上 `@click.prevnet` 避免事件觸發導致 Url 跳掉。
+- UserOrder.vue 的 65 行建議將 products 寫預設值上去。
+- `<error-message name="姓名" class="invalid-feedback"></error-message>` 也可以試著改成元件大小寫模式 `<error-message name="姓名" class="invalid-feedback"></error-message>` → `<ErrorMessage name="姓名" class="invalid-feedback"></ErrorMessage>`，而且也可以改成自閉合。
+- UserCart.vue 的 28 行的 `alt` 屬性建議多描述一下，該屬性用途是用在於，當使用者網路較慢時可以先告知使用者這區塊是什麼，所以是一個很重要的使用者體驗設置。
+- 頂級元素之間建議補上換行(`template`、`script` 與 `style`)。
+- ProductsViewCard.vue 有註解不要的程式碼。
+- SCSS 中的註解也要整理，除 Bootstrap 之外可以不用。

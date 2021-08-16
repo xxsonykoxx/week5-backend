@@ -1,0 +1,75 @@
+* {
+  // color: #212529;
+}
+body {
+  // font-family: 'Lato', sans-serif;
+}
+.nav {
+  position: fixed;
+  min-width: 296px;
+  min-height: 100vh;
+  font-weight: bold;
+  color: #212529;
+}
+.main {
+  margin-left: 296px;
+}
+.logo {
+  margin-left: 32px;
+  margin-top: 32px;
+  margin-bottom: 20px;
+}
+.layout-link {
+  color: #212529;
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.main {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.my-photo {
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+  img {
+    width: 100%;
+    border-radius: 50%;
+  }
+}
+.my-account-content {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 32px;
+  left: 32px;
+  p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+  }
+  .my-email {
+    font-size: 14px;
+    color: #6c757d;
+  }
+}
+.nav-link {
+  padding: 12px 32px;
+  position: relative;
+}
+.nav-link.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 4px;
+  height: 32px;
+  border-left: 4px solid #198754;
+}
+.list-group-item.active {
+  color: black;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+}
