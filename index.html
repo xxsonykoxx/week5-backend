@@ -1,10 +1,117 @@
----
-title: Assignment
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
-<script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="ie=edge"
+  >
+  <title>
+    Assignment
+  </title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Icons"
+    rel="stylesheet"
+  >
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="./assets/style/all.css"
+  >
+</head>
+
+<body>
+  <nav
+    class="nav flex-column bg-light"
+    id="nav"
+  >
+    <a
+      href="#"
+      class="logo"
+    >
+      <img
+        src="./assets/images/logo-ANSWER.svg"
+        alt=""
+      >
+    </a>
+    <a
+      class="nav-link link-success layout-link"
+      aria-current="page"
+      href="#"
+    >
+      <span class="material-icons pe-3"> poll </span>
+      <span>Dashboard</span>
+    </a>
+    <a
+      class="nav-link link-success layout-link"
+      href="#"
+    >
+      <span class="material-icons  pe-3">
+        question_answer
+      </span>
+      <span>Question</span>
+    </a>
+    <a
+      class="nav-link link-success layout-link"
+      href="index.html"
+      id="assignment"
+    >
+      <span class="material-icons  pe-3">
+        assignment
+      </span>
+      <span>Assignment</span>
+    </a>
+    <a
+      class="nav-link link-success layout-link"
+      href="#"
+    >
+      <span class="material-icons  pe-3">
+        video_library
+      </span>
+      <span>Course</span>
+    </a>
+    <a
+      class="nav-link link-success layout-link"
+      href="admin.html"
+      id="admin"
+    >
+      <span class="material-icons  pe-3">
+        people
+      </span>
+      <span>Admin</span>
+    </a>
+    <a
+      class="nav-link link-success layout-link"
+      href="#"
+    >
+      <span class="material-icons  pe-3">
+        settings
+      </span>
+      <span>Settings</span>
+    </a>
+    <div class="my-account-content">
+      <div class="my-photo">
+        <img
+          src="./assets/images/83684168_p12_master1200.jpg"
+          alt=""
+        >
+      </div>
+      <div class="my-account">
+        <p class="my-id">Andy Chen</p>
+        <p class="my-email">andy0401@mail.com</p>
+      </div>
+    </div>
+  </nav>
+  <main class="main">
+    <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
 <script src="./assets/js/assignment.js"></script>
 
 
@@ -279,3 +386,12 @@ current: index
   </div>
 
 </div>
+  </main>
+
+
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
